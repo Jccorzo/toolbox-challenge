@@ -4,6 +4,7 @@
   "description": "api rest",
   "main": "index.js",
   "scripts": {
+    "run": "",
     "test": "npm test"
   },
   "author": "Juan Camilo Corzo Tejada",
@@ -11,5 +12,10 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "standard": "^16.0.3"
   }
 }
