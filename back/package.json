@@ -1,0 +1,15 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "api rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Juan Camilo Corzo Tejada",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
