@@ -1,0 +1,38 @@
+openapi: "3.0.0"
+info:
+  description: ""
+  title: "Toolbox challenge"
+  version: "1.0.0"
+servers: 
+  - url: "http://localhost:3000"
+paths:
+  /iecho:
+    get:
+      summary: "Get the word in backwards, and know if the word is Palindrome"
+      parameters:
+      - in: "query"
+        name: "text"
+        schema:
+          type: "string"
+        description: "param"
+      responses:
+        "200":
+          description: "word in backwards"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties: 
+                  text:
+                    type: "string"
+                  palindrome: 
+                    type: "boolean"
+        "400":
+          description: "error"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  error:
+                    type: "string"
