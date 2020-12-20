@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import Reducers from './reducers/index';
+import words from './reducers/words';
 
-export const store = createStore(Reducers, applyMiddleware(thunk))
+export const store = createStore(words, applyMiddleware(thunk))

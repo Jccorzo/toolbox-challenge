@@ -1,10 +1,24 @@
-const wordsInitial = {
+import { RESPONSE, LOADING } from '../actions/types';
 
+const wordsInitial = {
+    loading: false,
+    results: []
 }
 
-const wordsReducer = ({ state = wordsInitial, type }) => {
+const wordsReducer = (state = wordsInitial, { type, result }) => {
     switch (type) {
-        default: state
+        case LOADING:
+            return {
+                ...state,
+                loading: true
+            }
+        case RESPONSE:
+            return {
+                ...state,
+                loading: false,
+                results: [result, ...state.results]
+            }
+        default: return state
     }
 }
 
