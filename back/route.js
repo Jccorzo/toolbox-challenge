@@ -3,7 +3,7 @@ import { reverse, validatePalindrome } from './helper'
 const route = (app) => {
   app.get('/iecho', (req, res) => {
     try {
-      const text = JSON.parse(req.query.text)
+      const text = req.query.text.replace(/['"]+/g, '')
       if (text && typeof text === 'string') {
         const inverse = reverse(text)
         const palindrome = validatePalindrome(text, inverse)

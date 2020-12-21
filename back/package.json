@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec babel-node index.js",
     "test": "mocha --require @babel/register test/*.js",
-    "build": "./build.sh"
+    "build": "sh ./build.sh"
   },
   "author": "Juan Camilo Corzo Tejada",
   "license": "ISC",
