@@ -4,7 +4,7 @@ Hi!
 
 This project has two parts, backend and front.end, each one have your own method to run, but they can be run together as follows:
 
-With: docker-compose up . 
+With: "docker-compose up"  
 
 each part going to build a container, and it will run at port 3000 for front-end and 3001 port for backend.
 
